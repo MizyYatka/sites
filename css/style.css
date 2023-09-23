@@ -1,0 +1,69 @@
+body {
+    background: conic-gradient(from 195deg at 87.56% 117.95%, #0DA4F9 0deg, #0DA4F9 0deg, #0DA4F9 0.035999999090563506deg, #E1F4FE 198.74999284744263deg, #E1F4FE 315deg, #FFF 360deg);
+    margin: 0 auto;
+}
+
+
+.container {
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+}
+
+.div__logo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+
+.chat__logo {
+    width: 54.205px;
+    height: 37.908px;
+    flex-shrink: 0;
+}
+
+.input__send {
+    margin: 683px 0 0 8px;
+}
+
+.send__message {
+    background-color: transparent;
+    width: 360px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-indent: 18px;
+    resize: none;
+}
+
+.send__message::placeholder {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 8px;
+}
+
+.send__message:focus {
+    outline: none;
+}
+
+.button__send {
+    width: 55px;
+    height: 50px;
+    flex-shrink: 0;
+    background-image: url('../image/button_img.png');
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+
+}
