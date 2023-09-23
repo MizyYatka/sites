@@ -29,7 +29,7 @@ body {
 .send__message {
     background-color: transparent;
     width: 365px;
-    height: 45px;
+    height: 43px;
     flex-shrink: 0;
     border-radius: 15px;
     border: 2px solid #FFF;
