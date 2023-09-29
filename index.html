@@ -50,7 +50,7 @@
                             div.classList.add('user__message')
 
                             const textinarea = textarea.value
-                            div.textContent = `$Привет - {tg.initDataUnsafe.user.id}`;
+                            div.textContent = `Привет - ${tg.initDataUnsafe.user.id}`;
                             container.appendChild(div);
 
                             textarea.value = '';
