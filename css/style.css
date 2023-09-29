@@ -1,0 +1,140 @@
+body {
+    background: conic-gradient(from 195deg at 87.56% 117.95%, #0DA4F9 0deg, #0DA4F9 0deg, #0DA4F9 0.035999999090563506deg, #E1F4FE 198.74999284744263deg, #E1F4FE 315deg, #FFF 360deg);
+    height: 844px;
+    margin: 0 auto;
+    background-attachment:fixed;
+    overflow: hidden;
+}
+
+h {
+    color: rgb(255, 0, 0);
+}
+
+
+.container {
+    width: auto;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.div__logo {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    position: fixed;
+    left:  0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #0DA4F9;
+}
+
+.chat__logo {
+    width: 54.205px;
+    height: 37.908px;
+    flex-shrink: 0;
+}
+
+.input__send {
+    height: 70px;
+    flex-shrink: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #161822;
+    padding: 0 10px 0 10px;
+}
+
+.send__message {
+    background-color: transparent;
+    height: 43px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-indent: 18px;
+    resize: none;
+    margin: 15px 0 0 0;
+}
+
+.send__message::placeholder {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.send__message:focus {
+    outline: none;
+}
+
+.button__send {
+    width: 46px;
+    height: 41px;
+    flex-shrink: 0;
+    background-image: url('../image/button_img.png');
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+    margin-right: -2px;
+    margin-bottom: -3px;
+}
+
+.button__send:focus {
+    outline: none;
+}
+
+
+.main__chat {
+    padding-top: 80px;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: 54.6em;
+}
+
+.start__message {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 35px 7px 0;
+    padding: 10px 0 13px 10px;
+    word-wrap: break-word;
+}
+
+.user__message {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 7px 35px;
+    background: linear-gradient(rgba(0, 163, 255, 1) 0%, rgba(23, 64, 255, 1) 100%);
+    padding: 10px 10px 13px 10px;
+    text-align:justify;
+    align-self: flex-end;
+    word-wrap: break-word;
+}
