@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Animated</title>
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="div__logo">
+                <img class="chat__logo" src="image/chat_logo.png" alt="chatlogo">
+            </div>
+            <div class="main__chat" id="Mainchat">
+                <div class="start__message">
+                    Привет, я твой личный помощник! Свайпни вверх, что раскрыть окно полностью и задай свой вопрос, чтобы получить на него ответ
+                </div>
+            </div>
+            <div class="input__send">
+                    <textarea id="Clickarea" class="send__message", type="text", name="message__send", placeholder="Send a message"></textarea>
+                    <button id="Buttonarea" class="button__send" style="display: none;position:fixed; right: 13px; bottom: 16px" onclick="this.blur();"></button>
+                <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script>
+                    const textarea = document.getElementById('Clickarea');
+                    const button = document.getElementById('Buttonarea');
+                    textarea.addEventListener('input', () => {
+                        if (textarea.value.trim() === '') {
+                            button.style.display = 'none';
+                        } else {
+                            button.style.display = 'inline'
+                        }
+
+                    });
+
+                    function createDiv() {
+                        let tg = window.Telegram.WebApp
+                        const userid = tg.WebAppUser.id
+                        const container = document.getElementById('Mainchat');
+                        message = textarea.value.trim()
+                        if (message !== '') {
+
+                            const div = document.createElement('div');
+                            div.classList.add('user__message')
+
+                            const textinarea = textarea.value
+                            div.textContent = userid;
+                            container.appendChild(div);
+
+                            textarea.value = '';
+                            textarea.focus();
+                        }
+                        else {
+                            textarea.focus();
+                        }
+                    }
+
+                const createDivButton = document.getElementById('Buttonarea');
+                createDivButton.addEventListener('click', createDiv);
+
+
+                </script>
+
+            </div>
+        </div>
+    </body>
+</html>
