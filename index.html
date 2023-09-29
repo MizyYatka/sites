@@ -42,17 +42,15 @@
                     });
 
                     function createDiv() {
-                        let tg = window.Telegram.WebApp
-                        const userid = tg.WebAppUser.id
                         const container = document.getElementById('Mainchat');
                         message = textarea.value.trim()
                         if (message !== '') {
-
+                            let tg = window.Telegram.WebApp;
                             const div = document.createElement('div');
                             div.classList.add('user__message')
 
                             const textinarea = textarea.value
-                            div.textContent = userid;
+                            div.textContent = `$Привет - {tg.initDataUnsafe.user.id}`;
                             container.appendChild(div);
 
                             textarea.value = '';
