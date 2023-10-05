@@ -21,7 +21,9 @@ function createDiv() {
         const area_text = textarea.value
         div_user.textContent = area_text;
         main_chat.appendChild(div_user);
+        textarea.value = ''
         main_chat.scrollTop = main_chat.scrollHeight;
+        textarea.focus();
     }
     else {
         textarea.focus();
