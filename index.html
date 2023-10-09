@@ -15,6 +15,12 @@
     </head>
     <body>
         <div class="container">
+            <script src="https://telegram.org/js/telegram-web-app.js"></script>
+            <script>
+                let tg = window.Telegram.WebApp;
+                tg.onEvent('viewportChanged', () => tg.expand())
+                tg.expand();
+            </script>
             <div class="div__logo">
                 <img class="chat__logo" src="image/chat_logo.png" alt="chatlogo">
             </div>
