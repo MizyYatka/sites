@@ -1,14 +1,11 @@
 body {
     background: conic-gradient(from 195deg at 87.56% 117.95%, #0DA4F9 0deg, #0DA4F9 0deg, #0DA4F9 0.035999999090563506deg, #E1F4FE 198.74999284744263deg, #E1F4FE 315deg, #FFF 360deg);
-    height: var(--tg-viewport-stable-height);
     margin: 0 auto;
     background-attachment:fixed;
-    overflow: hidden;
 }
 .container {
     width: auto;
     margin: 0;
-    overflow: hidden;
 }
 
 /*Header*/
@@ -96,7 +93,6 @@ body {
 .main__chat {
     padding-top: 80px;
     box-sizing: border-box;
-    overflow: scroll;
     height: 211vw;
 }
 
